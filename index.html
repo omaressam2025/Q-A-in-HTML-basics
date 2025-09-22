@@ -1,0 +1,1040 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>100 سؤال وجواب في HTML (الأساسيات)</title>
+    <style>
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 20px;
+            line-height: 1.8;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        details {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px 0;
+            padding: 10px 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            color: #333;
+        }
+
+        summary:hover {
+            color: #0077cc;
+        }
+
+        p {
+            margin: 8px 0 0;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>100 سؤال وجواب في HTML (الأساسيات)</h1>
+
+    <details>
+        <summary>1- ايه هو HTML؟</summary>
+        <p>HTML أو HyperText Markup Language هي اللغة الأساسية اللي بيتم استخدامها لبناء هيكل صفحات الويب. الهدف منها
+            إنها تنظم المحتوى وتحدد شكله الأساسي زي العناوين، الفقرات، الصور، الجداول، والروابط. HTML مش لغة برمجة
+            بالمعنى التقليدي، لأنها مش بتتعامل مع منطق أو شروط أو loops، لكنها لغة ترميز (Markup) يعني بتوضح للمتصفح كل
+            جزء في الصفحة معناه إيه عشان يعرضه صح.</p>
+    </details>
+
+    <details>
+        <summary>2- ايه معنى tag في HTML؟</summary>
+        <p>tag أو الوسم هو الكود اللي بيتكتب بين أقواس &lt; &gt;، واللي بيحدد نوع العنصر. معظم الوسوم ليها وسم فتح (زي
+            &lt;p&gt;) ووسم قفل (زي &lt;/p&gt;). الوسوم دي بتقول للمتصفح ده نص، ده صورة، ده جدول وهكذا. بعض الوسوم ذاتية
+            الإغلاق زي &lt;img&gt; و &lt;br&gt;.</p>
+    </details>
+
+    <details>
+        <summary>3- ايه الفرق بين &lt;h1&gt; و &lt;h6&gt;؟</summary>
+        <p>وسوم العناوين في HTML بتبدأ من &lt;h1&gt; لحد &lt;h6&gt;. &lt;h1&gt; أكبر عنوان وبيستخدم غالبًا للعنوان
+            الرئيسي للصفحة. &lt;h6&gt; أصغر عنوان وبيستخدم للتقسيمات البسيطة أو الأقل أهمية. الفرق مش مجرد حجم الخط، لكن
+            كمان أهمية في تحسين محركات البحث (SEO)، لأن العناوين بتوضح هيكل الصفحة لمحركات البحث.</p>
+    </details>
+
+    <details>
+        <summary>4- ايه فائدة &lt;p&gt;؟</summary>
+        <p>&lt;p&gt; هو وسم الفقرة (paragraph). بيستخدم لكتابة نصوص عادية داخل الصفحة. المتصفح تلقائيًا بيضيف مسافات قبل
+            وبعد كل فقرة عشان يفصلها عن باقي النصوص، وده بيسهل القراءة.</p>
+    </details>
+
+    <details>
+        <summary>5- ايه الفرق بين &lt;br&gt; و &lt;p&gt;؟</summary>
+        <p>&lt;br&gt; بيعمل كسر سطر واحد بس، يعني بيكمل النص من السطر الجديد. &lt;p&gt; بيعمل فقرة كاملة مستقلة بتكون
+            منفصلة بمسافات فوق وتحت. &lt;br&gt; مناسب للحالات اللي عايز فيها سطر جديد جوه نفس الفقرة زي كتابة شعر أو
+            عناوين فيها أكثر من سطر.</p>
+    </details>
+
+    <details>
+        <summary>6- ازاي أكتب تعليق في HTML؟</summary>
+        <p>التعليقات في HTML بتكتب كده: &lt;!-- تعليق هنا --&gt;. التعليقات مش بتظهر للمستخدم العادي في الصفحة لكن بتبقى
+            موجودة في الكود عشان المبرمجين يفهموا أو يوضحوا أجزاء من الكود.</p>
+    </details>
+
+    <details>
+        <summary>7- ايه الفرق بين &lt;head&gt; و &lt;body&gt;؟</summary>
+        <p>&lt;head&gt; بيحتوي على البيانات الوصفية للصفحة (metadata) زي العنوان &lt;title&gt;، ملفات CSS المربوطة،
+            ملفات JavaScript الخارجية، ووسوم meta الخاصة بالوصف والكلمات المفتاحية. &lt;body&gt; هو الجزء اللي بيظهر
+            فعليًا للمستخدم وبيحتوي المحتوى زي النصوص والصور والفيديوهات.</p>
+    </details>
+
+    <details>
+        <summary>8- ايه هو attribute في HTML؟</summary>
+        <p>attribute هو خاصية بتتكتب جوه وسم HTML عشان تضيف له معلومة أو وظيفة إضافية. زي &lt;a href=\"link\"&gt; اللي
+            بتحدد الرابط اللي هيوديه العنصر. أو &lt;img src=\"image.jpg\" alt=\"description\"&gt; اللي بتحدد مصدر الصورة
+            والنص البديل.</p>
+    </details>
+
+    <details>
+        <summary>9- ايه الفرق بين relative و absolute URL في الروابط؟</summary>
+        <p>absolute URL بيحتوي العنوان الكامل بما في ذلك البروتوكول (https://example.com/page.html). relative URL بيكون
+            نسبي لمكان الملف الحالي. لو انت في مجلد معين وعايز تربط ملف تاني في نفس المجلد، تكتب بس اسمه (page.html) أو
+            تطلع مجلد بمسار ../page.html. relative أسرع وأبسط لو الملفات على نفس السيرفر.</p>
+    </details>
+
+    <details>
+        <summary>10- ازاي بضيف صورة؟</summary>
+        <p>باستخدام وسم &lt;img&gt; اللي هو وسم ذاتي الإغلاق. أهم attributes فيه: src لمسار الصورة، و alt للنص البديل
+            اللي بيوصف الصورة لو مش اتعرضت. مثال: &lt;img src=\"photo.jpg\" alt=\"صورة طبيعية\"&gt;.</p>
+    </details>
+
+    <!-- هكمل باقي الأسئلة بنفس النمط لحد 100 -->
+    <details>
+        <summary>11- ايه هو alt attribute في &lt;img&gt;؟</summary>
+        <p>alt attribute بيستخدم لكتابة وصف نصي للصورة. لو الصورة ما ظهرتش لأي سبب، النص البديل بيتعرض مكانها. كمان النص
+            ده بيساعد محركات البحث إنها تفهم محتوى الصورة، وكمان بيساعد الأشخاص ضعاف البصر اللي بيستخدموا برامج قراءة
+            الشاشة.</p>
+    </details>
+
+    <details>
+        <summary>12- ايه الفرق بين &lt;ul&gt; و &lt;ol&gt;؟</summary>
+        <p>&lt;ul&gt; هو unordered list يعني قائمة نقطية. &lt;ol&gt; هو ordered list يعني قائمة مرقمة. جوه القائمتين
+            بتستخدم &lt;li&gt; لكتابة عناصر القائمة. الفرق إن ul بيظهر نقاط أو رموز، و ol بيظهر أرقام أو حروف حسب النوع.
+        </p>
+    </details>
+
+    <details>
+        <summary>13- ازاي بضيف لينك في HTML؟</summary>
+        <p>باستخدام وسم &lt;a&gt;. لازم يكون فيه attribute اسمه href بيحدد الرابط. مثال: &lt;a
+            href=\"https://example.com\" target=\"_blank\"&gt;زور الموقع&lt;/a&gt;. هنا target=\"_blank\" معناها افتح
+            الرابط في نافذة جديدة.</p>
+    </details>
+
+    <details>
+        <summary>14- ايه هو semantic HTML؟</summary>
+        <p>semantic HTML يعني استخدام الوسوم اللي ليها معنى واضح وبتوضح وظيفة العنصر. زي &lt;header&gt;, &lt;footer&gt;,
+            &lt;article&gt;, &lt;section&gt;. ده بيساعد محركات البحث وأدوات الوصول إنها تفهم المحتوى بشكل أوضح، وبيخلي
+            الكود منظم أكتر.</p>
+    </details>
+
+    <details>
+        <summary>15- ايه الفرق بين inline و block elements؟</summary>
+        <p>block elements (زي &lt;div&gt;, &lt;p&gt;) بتبدأ في سطر جديد وتاخد العرض كله. inline elements (زي
+            &lt;span&gt;, &lt;a&gt;) بتكمل في نفس السطر ومش بتكسر النص. الفرق ده مهم عشان تتحكم في توزيع العناصر في
+            الصفحة.</p>
+    </details>
+
+    <details>
+        <summary>16- ازاي بكتب جدول بسيط (<code>&lt;table&gt;</code>)؟</summary>
+        <p>الجدول في HTML بيتبنى بوسم <code>&lt;table&gt;</code>، جواه بتحط صفوف <code>&lt;tr&gt;</code> وكل صف جواه
+            خلايا:
+            خلايا عنوان <code>&lt;th&gt;</code> (عادة في أول صف) وخلايا بيانات <code>&lt;td&gt;</code>. مثال كامل وظيفي:
+        </p>
+        <pre><code>&lt;table border="1"&gt; &lt;thead&gt; &lt;tr&gt;&lt;th&gt;الاسم&lt;/th&gt;&lt;th&gt;العمر&lt;/th&gt;&lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt;&lt;td&gt;أحمد&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;منى&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; </code></pre>
+        <p>نقاط مهمة: استعمل <code>&lt;thead&gt;</code>/<code>&lt;tbody&gt;</code> لتنظيم الجدول، وحط <code>scope</code>
+            أو
+            <code>id</code>/ <code>headers</code> لو الجدول معقّد لتحسين الوصولية.
+        </p>
+    </details>
+    <details>
+        <summary>17- ازاي بستخدم <code>colspan</code> و <code>rowspan</code> لدمج خلايا الجدول؟</summary>
+        <p>لو عايز خلية تمتد على أكثر من عمود استخدم <code>colspan="N"</code>، ولو تمتد على صفوف استخدم
+            <code>rowspan="N"</code>. مثال:
+        </p>
+        <pre><code>&lt;tr&gt; &lt;td colspan="2"&gt;اسم كامل&lt;/td&gt; &lt;/tr&gt; </code></pre>
+        <p>خلي بالك من تخطيط الصفوف والأعمدة بعد الدمج عشان ميتلغبطش ترتيب الخلايا، واختبر على شاشات مختلفة لو جدولك
+            معقّد.
+        </p>
+    </details>
+    <details>
+        <summary>18- ايه أفضل ممارسات لكتابة جداول قابلة للوصول (accessible tables)؟</summary>
+        <p>عشان الجدول يبقى سهل الوصول للي بيستخدموا screen readers: استخدم <code>&lt;th&gt;</code> مع
+            <code>scope="col"</code> أو <code>scope="row"</code>، ضيف <code>caption</code> لشرح محتوى الجدول، استخدم
+            <code>headers</code> و<code>id</code> لو layout معقّد، وتجنب استخدام الجداول للتخطيط البصري (layout) —
+            الجداول
+            لازم للبيانات فقط.
+        </p>
+    </details>
+    <details>
+        <summary>19- ازاي أعمل رابط داخلي (anchor) يودّي لمكان معين في نفس الصفحة؟</summary>
+        <p>تستخدم خاصية <code>id</code> على العنصر الهدف، وبعدين تربطله بـ <code>#id</code> في <code>href</code>. مثال:
+        </p>
+        <pre><code>&lt;h2 id="section1"&gt;القسم الأول&lt;/h2&gt; &lt;a href="#section1"&gt;روح للقسم الأول&lt;/a&gt; </code></pre>
+        <p>دي طريقة بسيطة للسّكرول السلس لو ضفت CSS/JS، أو للملاحة السريعة داخل الصفحة.</p>
+    </details>
+    <details>
+        <summary>20- ازاي أعمل صورة responsive عشان تناسب شاشات مختلفة؟</summary>
+        <p>في HTML عندك أدوات جاهزة زي <code>&lt;img srcset=&quot;...&quot; sizes=&quot;...&quot;&gt;</code>
+            و<code>&lt;picture&gt;</code>. الفكرة إنك تقدّم نسخ متعدّدة من الصورة (أحجام أو crops مختلفة) والمتصفح يختار
+            الانسب حسب عرض الـ viewport وdevice pixel ratio. مثال مبسّط:</p>
+        <pre><code>&lt;img src="small.jpg" srcset="small.jpg 480w, medium.jpg 800w, large.jpg 1200w" sizes="(max-width:600px) 480px, (max-width:1200px) 800px, 1200px" alt="وصف الصورة"&gt; </code></pre>
+        <p>دا بيقلل تحميل صور كبيرة على الموبايل ويحسّن الأداء.</p>
+    </details>
+    <details>
+        <summary>21- ايه هو <code>&lt;picture&gt;</code> وإمتى استخدمه بدل <code>&lt;img&gt;</code>؟</summary>
+        <p><code>&lt;picture&gt;</code> بيسمحلك تحدد <code>&lt;source&gt;</code> لكل media query أو نوع ملف (webp vs
+            jpg)
+            وتتحكّم في art direction (تغيّر crop أو مقطع الصورة على breakpoints مختلفة). استخدمه لو عايز بدائل مختلفة
+            للصورة
+            اعتمادًا على العرض أو دعم صيغ حديثة.</p>
+    </details>
+    <details>
+        <summary>22- ازاي أضيف فيديو في HTML؟ وازاي أضمن توافقه مع Browsers؟</summary>
+        <p>عنصر الفيديو:
+            <code>&lt;video controls&gt;&lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;</code>.
+            للحماية من مشاكل التوافق قدّم أكثر من source بصيغ مختلفة (mp4, webm). أضف attribute مثل
+            <code>controls</code>
+            لعرض أزرار التشغيل، <code>poster</code> لصورة معاينة، و <code>muted</code> أو <code>autoplay</code> حسب
+            الحاجة
+            (لكن Autoplay غالبًا تحتاج <code>muted</code> في بعض المتصفحات).
+        </p>
+    </details>
+    <details>
+        <summary>23- ايه أهمية نص <code>alt</code> للصورة من ناحية الوصولية وSEO؟</summary>
+        <p>نص <code>alt</code> بيساعد الأشخاص اللي ما بيشوفوش الصورة (باستخدام screen readers) لأن البرنامج هيقرألك
+            النص.
+            كمان لو الصورة ما اتحمّلتش يظهر الـalt كبديل. لمحركات البحث، الـalt بيساعدها تعرف محتوى الصورة وبالتالي ممكن
+            يظهر في بحث الصور—فهو مهم للأداء والـaccessibility.</p>
+    </details>
+    <details>
+        <summary>24- ازاي أعمل رابط يفتح صفحة جديدة وآمن (target="_blank") بدون مشاكل أمان؟</summary>
+        <p>لو هتستخدم <code>target="_blank"</code> ضيف كمان <code>rel="noopener noreferrer"</code> لتمنع الصفحة الجديدة
+            من
+            الوصول للـ <code>window.opener</code> وقلل مخاطر الـ tabnabbing:</p>
+        <pre><code>&lt;a href="https://example.com" target="_blank" rel="noopener noreferrer"&gt;افتح&lt;/a&gt; </code></pre>
+        <p>دي ممارسة أمان بسيطة وفعالة.</p>
+    </details>
+    <details>
+        <summary>25- ايه الفرق بين inline element و block element عمليًا؟ ومتى اغير الـ display؟</summary>
+        <p>الفرق الأساسي إن block يأخذ سطر جديد ويستطيع احتواء عناصر اخرى، بينما inline يبقى في نفس السطر ويأخذ قد
+            المحتوى.
+            لو محتاج تغير السلوك البصري ممكن تستخدم CSS: <code>display:block</code> أو
+            <code>display:inline-block</code>.
+            مثلاً لو عايز زرار يتصرف كعنصر inline لكن له أبعاد تستخدم <code>inline-block</code>.
+        </p>
+    </details>
+    <details>
+        <summary>26- ازاي أستخدم <code>&lt;form&gt;</code> مع validation بسيطة في HTML؟</summary>
+        <p>HTML بيوفر attributes جاهزة زي <code>required</code>, <code>type="email"</code>, <code>min</code>,
+            <code>max</code>, <code>pattern</code> (لـ regex). المتصفح هيعرض رسائل افتراضية للمستخدم. مثال:
+        </p>
+        <pre><code>&lt;form&gt; &lt;input type="email" name="email" required&gt; &lt;input type="number" name="age" min="1" max="120"&gt; &lt;input type="submit" value="إرسال"&gt; &lt;/form&gt; </code></pre>
+        <p>لكن لو عايز تحكم كامل في الرسائل أو الـ UX استخدم JavaScript لعمل validation مخصّص، مع الحفاظ على التحقق
+            server-side.</p>
+    </details>
+    <details>
+        <summary>27- ازاي أستخدم <code>label</code> بطريقة صحيحة لربطها بالـ input؟</summary>
+        <pم>في طريقتين: 1) تحط الـ <code>input</code> جوا الـ <code>label</code>، أو 2) تربطهم بالـ <code>for</code>
+            و<code>id</code>. المثال الثاني مفيد لو بتحط ال label بعيد عن ال input. الربط مهم عشان لما المستخدم يكليك
+            على
+            الـ label التركيز يروح للـ input—وده مهم جدا للوصولية.</p>
+    </details>
+    <details>
+        <summary>28- ايه الفرق بين placeholder و label؟ ولمتين استخدم كل واحد؟</summary>
+        <p>الـ <code>label</code> لازم يظهر دايما ويشرح الحقل، أما <code>placeholder</code> فده نص مساعد مؤقت جوا الحقل
+            ويختفي لما المستخدم يبدأ يكتب. من الأفضل دايما استخدام label ظاهرة علشان الـ accessibility، واستخدم
+            placeholder
+            للـ hint أو المثال.</p>
+    </details>
+    <details>
+        <summary>29- ازاي أعمل input للـ email والـ tel والـ url؟ وليه تستخدمهم مش input type="text"؟</summary>
+        <p>HTML بتقدّم أنواع مخصّصة: <code>&lt;input type="email"&gt;</code>, <code>type="tel"</code>,
+            <code>type="url"</code>. المتصفح يقدّم validation مبدئي ويعرض لوحة مفاتيح مناسبة على الموبايل (مثلاً لوحة
+            فيها @
+            لtype="email"). ده يحسّن UX ويقلل أخطاء الإدخال.
+        </p>
+    </details>
+    <details>
+        <summary>30- ازاي أضمن إن الفورم يشتغل حتى لو جاڤاسكربت معطّل؟</summary>
+        <p>اعتمد على progressive enhancement: خلي الـ form يملك action و method للسيرفر بحيث لو الجافاسكربت اتعطل
+            السيرفر
+            يتعامل مع الطلب. استخدم JavaScript كتحسين للـ UX مش كشرط وحيد لإرسال البيانات.</p>
+    </details>
+    <details>
+        <summary>31- ازاي أستخدم <code>input type="file"</code> مع accept و multiple؟</summary>
+        <p>تقدر تحط <code>accept="image/*,.pdf"</code> لتقييد أنواع الملفات، و<code>multiple</code> عشان تسمح باختيار
+            أكتر
+            من ملف. مثال:</p>
+        <pre><code>&lt;input type="file" accept="image/*" multiple&gt; </code></pre>
+        <p>لكن تحقق دايمًا server-side لأن المستخدم ممكن يلغي القيود client-side.</p>
+    </details>
+    <details>
+        <summary>32- ايه هو <code>fieldset</code> و <code>legend</code>؟ وليه نستخدمهم؟</summary>
+        <p><code>fieldset</code> يجمع مجموعة من عناصر الفورم تحت إطار واحد، و<code>legend</code> بيوصف الإطار ده. ده
+            مفيد
+            لتنظيم الفورمات الكبيرة وتحسين الوصولية لأن screen readers بيفهموا إن الحقول دي مجموعة.</p>
+    </details>
+    <details>
+        <summary>33- ازاي أتحكّم في ترتيب التبويب (tab order) باستخدام <code>tabindex</code>؟</summary>
+        <p>الـ <code>tabindex</code> يحدد إذا كان العنصر قابل للـ focus وبأي ترتيب. قيمته: <code>0</code> تخلي العنصر
+            يدخل
+            في الترتيب الطبيعي، وقيم موجبة (<code>1</code>, <code>2</code>) تحدد ترتيب مخصّص (بس الاستخدام الموجَب نادر
+            لأنه
+            يمكن يربك مستخدمي الكيبورد). <code>-1</code> يجعل العنصر قابل للـ focus برمجيًا بس مش من Tab.</p>
+    </details>
+    <details>
+        <summary>34- ازاي أتعامل مع عناصر قابلة للتركيز focus و ازاي أتحكم في outline؟</summary>
+        <p>استخدم CSS pseudo-class <code>:focus</code> لتخصيص الستايل عند التركيز. متجنب إزالة تمامًا الـ
+            <code>outline</code> لأن ده يضر مستخدمي لوحة المفاتيح—لو هتشيله قدّم بديل مرئي واضح. مثال جيد:
+        </p>
+        <pre><code>:focus { outline: 3px solid #0077cc; } </code></pre>
+    </details>
+    <details>
+        <summary>35- ازاي أقدّم رسائل أخطاء للفورم بطريقة قابلة للوصول (accessible error messages)؟</summary>
+        <p>لو في خطأ، اعرض رسالة قريبة للحقل واستخدم <code>aria-describedby</code> لربط الحقل برسالة الخطأ. لو الرسالة
+            ديناميكية استخدم <code>aria-live="assertive"</code> علشان تقرأها برامج القراءة فورًا. كمان حط الـ focus على
+            أول
+            حقل به خطأ بعد الإرسال لسهولة التصحيح.</p>
+    </details>
+
+    <details>
+        <summary>100- ايه الفرق بين HTML و CSS و JavaScript؟</summary>
+        <p>HTML مسؤولة عن الهيكل الأساسي (structure) للصفحة: العناوين، الفقرات، الصور، الجداول. CSS مسؤولة عن الشكل
+            والتنسيق (style): الألوان، الخلفيات، الخطوط، توزيع العناصر. JavaScript مسؤولة عن التفاعل (behavior): إنها
+            تخلي الصفحة ديناميكية وتستجيب لتصرفات المستخدم زي الضغط على زرار، التحقق من فورم، أو تحميل بيانات من السيرفر
+            من غير ما تعيد تحميل الصفحة. التلاتة دول مع بعض هما العمود الفقري لأي موقع ويب حديث.</p>
+    </details>
+    <details>
+        <summary>36- ايه الفرق بين <code>GET</code> و <code>POST</code> في الفورم؟</summary>
+        <p>لما تبعت بيانات من الفورم للسيرفر باستخدام attribute <code>method</code> عندك اختيارين أساسيين:</p>
+        <ul>
+            <li><strong>GET</strong>: البيانات بتتبعت كـ query string في URL (زي <code>?name=omar&amp;age=25</code>). ده
+                بيظهر في شريط العنوان ويتخزن في history. مناسب للبحث أو استعلامات مش حساسة. لكن غير آمن للبيانات السرية
+                (passwords).</li>
+            <li><strong>POST</strong>: البيانات بتتبعت في جسم الطلب (HTTP body)، مش ظاهرة في URL. ده أنسب للمعلومات
+                الحساسة أو العمليات اللي بتغير في قاعدة البيانات.</li>
+        </ul>
+        <p>عمليًا: لو هتعمل <em>search</em> استخدم GET، لو <em>sign up / login / checkout</em> استخدم POST.</p>
+    </details>
+    <details>
+        <summary>37- ايه فائدة attribute <code>action</code> في الفورم؟</summary>
+        <p><code>action</code> بيحدد العنوان (URL) اللي الفورم هيبعت البيانات ليه بعد ما المستخدم يعمل submit. لو سبته
+            فاضي، هيتبعت لنفس الصفحة. في المواقع الكبيرة غالبًا هتوجه البيانات لملف PHP أو API endpoint. مثال:</p>
+        <pre><code>&lt;form action=&quot;submit.php&quot; method=&quot;post&quot;&gt; </code></pre>
+        <p>نصيحة: خليك واضح في تحديد الـ action عشان الكود يبقى مفهوم وسهل الصيانة.</p>
+    </details>
+    <details>
+        <summary>38- ايه الفرق بين <code>button type=&quot;submit&quot;</code> و
+            <code>button type=&quot;button&quot;</code>؟</summary>
+        <p>لو كتبت <code>&lt;button&gt;</code> من غير type، المتصفح بيفترض إنه <code>submit</code>.
+        <ul>
+            <li><code>submit</code>: بيبعَت الفورم للسيرفر أو يشغّل event <code>submit</code>.</li>
+            <li><code>button</code>: مش بيعمل أي حاجة افتراضيًا — مفيد لو عايز تكتب JS يتحكم في السلوك (زي فتح modal).
+            </li>
+            <li><code>reset</code>: بيرجّع كل القيم في الفورم لحالتها الافتراضية.</li>
+        </ul>
+        </p>
+    </details>
+    <details>
+        <summary>39- ازاي أستخدم <code>autocomplete</code> في الفورم؟</summary>
+        <p><code>autocomplete</code> بيساعد المتصفح يملأ الحقول تلقائيًا بناءً على بيانات محفوظة (زي البريد أو العنوان).
+            بتحطه على مستوى <code>&lt;form&gt;</code> أو <code>&lt;input&gt;</code>. مثال:</p>
+        <pre><code>&lt;input type=&quot;email&quot; name=&quot;email&quot; autocomplete=&quot;email&quot;&gt; </code></pre>
+        <p>ده بيوفر وقت للمستخدم ويحسّن الـ UX. بس لازم تحط قيمة مناسبة (زي <code>name</code>, <code>address</code>,
+            <code>tel</code>...).</p>
+    </details>
+    <details>
+        <summary>40- ايه أهمية <code>enctype</code> في الفورم خصوصًا مع الملفات؟</summary>
+        <p><code>enctype</code> بتحدد إزاي البيانات هتتشفّر وتتبعَت للسيرفر. في الحالة العادية
+            <code>application/x-www-form-urlencoded</code>. لكن لو عندك <code>input type=&quot;file&quot;</code> لازم
+            تستخدم <code>multipart/form-data</code> عشان الملف يتبعت صح.</p>
+        <pre><code>&lt;form method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt; </code></pre>
+    </details>
+    <details>
+        <summary>41- ازاي أتعامل مع <code>&lt;textarea&gt;</code> وأضبط حجمها؟</summary>
+        <p><code>&lt;textarea&gt;</code> عنصر لإدخال نصوص طويلة. تقدر تحدد الصفوف <code>rows</code> والأعمدة
+            <code>cols</code>، أو تسيبه وتتحكم بالـ CSS (<code>width</code>, <code>height</code>). تقدر كمان تمنع
+            المستخدم يغيّر الحجم بالـ CSS (<code>resize: none;</code>). مثال:</p>
+        <pre><code>&lt;textarea rows=&quot;5&quot; cols=&quot;30&quot;&gt;&lt;/textarea&gt; </code></pre>
+    </details>
+    <details>
+        <summary>42- ايه الفرق بين <code>checked</code> و <code>selected</code> في الفورم؟</summary>
+        <p>
+        <ul>
+            <li><code>checked</code>: للـ radio buttons و checkboxes — يحدد إن الخيار متعلم افتراضيًا.</li>
+            <li><code>selected</code>: للـ &lt;option&gt; جوا الـ &lt;select&gt; — يحدد الخيار الافتراضي.</li>
+        </ul>
+        </p>
+    </details>
+    <details>
+        <summary>43- ازاي أعمل مجموعة radio buttons مرتبطة ببعض؟</summary>
+        <p>الـ radio buttons بيرتبطوا بنفس الـ <code>name</code>. ده يخلي المستخدم يقدر يختار خيار واحد بس من المجموعة:
+        </p>
+        <pre><code>&lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;male&quot;&gt; ذكر &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt; أنثى </code></pre>
+    </details>
+    <details>
+        <summary>44- ازاي أضيف قائمة اختيار متعددة باستخدام <code>&lt;select multiple&gt;</code>؟</summary>
+        <p>لما تحط attribute <code>multiple</code> في &lt;select&gt; المستخدم يقدر يحدد أكتر من خيار:</p>
+        <pre><code>&lt;select name=&quot;skills&quot; multiple&gt; &lt;option&gt;HTML&lt;/option&gt; &lt;option&gt;CSS&lt;/option&gt; &lt;option&gt;JavaScript&lt;/option&gt; &lt;/select&gt; </code></pre>
+    </details>
+    <details>
+        <summary>45- ايه الفرق بين <code>disabled</code> و <code>readonly</code>؟</summary>
+        <p>
+        <ul>
+            <li><code>disabled</code>: يمنع التفاعل تمامًا، مش هيتبعت في البيانات.</li>
+            <li><code>readonly</code>: يمنع التعديل، لكن القيمة هتتبعت للسيرفر.</li>
+        </ul>
+        <p>مثال: input فيه user ID تحطه readonly مش disabled عشان يتبعت.</p>
+    </details>
+    <details>
+        <summary>46- ازاي أستخدم <code>progress</code> و <code>meter</code> في HTML؟</summary>
+        <p>
+        <ul>
+            <li><code>&lt;progress&gt;</code>: لعرض تقدم عملية (زي تحميل ملف). مثال:
+                <code>&lt;progress value=&quot;70&quot; max=&quot;100&quot;&gt;&lt;/progress&gt;</code>.</li>
+            <li><code>&lt;meter&gt;</code>: لعرض قيمة داخل نطاق معروف (زي تقييم أو مستوى حرارة). مثال:
+                <code>&lt;meter value=&quot;0.7&quot; min=&quot;0&quot; max=&quot;1&quot;&gt;&lt;/meter&gt;</code>.</li>
+        </ul>
+        </p>
+    </details>
+    <details>
+        <summary>47- ايه أهمية attribute <code>required</code>؟</summary>
+        <p><code>required</code> بيجبر المستخدم يدخل قيمة قبل إرسال الفورم. لو الحقل فاضي المتصفح هيمنع الإرسال ويظهر
+            رسالة خطأ. لكنه مش بديل للتحقق من السيرفر، لازم تعمل validation هناك برضه.</p>
+    </details>
+    <details>
+        <summary>48- ازاي أستخدم attribute <code>pattern</code> للتحقق من البيانات؟</summary>
+        <p><code>pattern</code> بيستعمل تعبير منتظم (regex) لتقييد الإدخال. مثال: لقبول بس 5 أرقام:</p>
+        <pre><code>&lt;input type=&quot;text&quot; pattern=&quot;\\d{5}&quot;&gt; </code></pre>
+        <p>المتصفح مش هيقبل الإدخال إلا لو وافق الباترن.</p>
+    </details>
+    <details>
+        <summary>49- ازاي أتعامل مع اتجاه النص (RTL أو LTR)؟</summary>
+        <p>HTML بيوفّر attribute <code>dir</code>. ممكن تحطه على &lt;html&gt; أو أي عنصر:</p>
+        <pre><code>&lt;div dir=&quot;rtl&quot;&gt;نص عربي&lt;/div&gt; &lt;div dir=&quot;ltr&quot;&gt;English text&lt;/div&gt; </code></pre>
+        <p>كمان تقدر تستخدم CSS <code>direction</code> للتحكم في الاتجاه.</p>
+    </details>
+    <details>
+        <summary>50- ايه الفرق بين <code>lang</code> في &lt;html&gt; وتأثيره؟</summary>
+        <p>Attribute <code>lang</code> بيحدد لغة الصفحة (مثلاً <code>lang=&quot;ar&quot;</code>). ده بيساعد محركات البحث
+            تعرف اللغة، وscreen readers تختار نطق مناسب. كمان بعض المتصفحات بتعرض أدوات تدقيق إملائي حسب اللغة.</p>
+    </details>
+    <details>
+        <summary>51- ازاي أكتب تعليقات (comments) في HTML؟</summary>
+        <p>التعليق بيكون كده:</p>
+        <pre><code>&lt;!-- ده تعليق مش هيظهر في الصفحة --&gt; </code></pre>
+        <p>التعليقات بتساعدك تفهّم الكود أو تسيب ملاحظات لفريقك. بس تجنّب تحط بيانات حساسة فيها لأنها بتظهر في source
+            code.</p>
+    </details>
+    <details>
+        <summary>52- ايه هو semantic HTML وليه مهم؟</summary>
+        <p>Semantic HTML يعني تستخدم عناصر بمعناها مش بس لشكلها. زي &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;,
+            &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;. ده بيساعد:</p>
+        <ul>
+            <li>محركات البحث تفهم المحتوى (SEO).</li>
+            <li>شاشات القارئة تفهم البنية.</li>
+            <li>الكود يبقى أوضح وسهل الصيانة.</li>
+        </ul>
+    </details>
+    <details>
+        <summary>53- ايه الفرق بين <code>&lt;section&gt;</code> و <code>&lt;div&gt;</code>؟</summary>
+        <p>&lt;div&gt; عنصر عام (generic) بدون معنى محدد. &lt;section&gt; عنصر semantic بيمثل جزء منطقي من الصفحة ليه
+            عنوان غالبًا. استخدم &lt;section&gt; لو فيه معنى، واستخدم &lt;div&gt; للتجميع أو الستايل لما مفيش عنصر
+            semantic مناسب.</p>
+    </details>
+    <details>
+        <summary>54- امتى استخدم <code>&lt;article&gt;</code> بدل <code>&lt;section&gt;</code>؟</summary>
+        <p>&lt;article&gt; للمحتوى المستقل اللي ممكن يتوزع أو يتفهم لوحده (مقالة، بوست، تعليق). &lt;section&gt;
+            للتقسيمات اللي بتبني الصفحة وممكن تبقى مرتبطة بغيرها. قاعدة بسيطة: لو المحتوى له معنى بذاته — استخدم
+            &lt;article&gt;.</p>
+    </details>
+    <details>
+        <summary>55- ايه أهمية عناصر <code>&lt;header&gt;</code> و <code>&lt;footer&gt;</code>؟</summary>
+        <p>
+        <ul>
+            <li><code>&lt;header&gt;</code>: يمثل مقدمة القسم أو الصفحة (شعار، عنوان، روابط).</li>
+            <li><code>&lt;footer&gt;</code>: يمثل نهاية القسم أو الصفحة (حقوق، روابط إضافية).</li>
+        </ul>
+        <p>ممكن يكون فيه أكتر من header/footer (واحد لكل &lt;article&gt; مثلًا).</p>
+    </details>
+      <details>
+    <summary>56- ايه الفرق بين &lt;div&gt; و &lt;span&gt;؟</summary>
+    <p>
+      الاتنين عناصر عامة (generic containers)، بس الفرق الأساسي إن:  
+      - &lt;div&gt; عنصر block-level يعني بياخد السطر بالكامل وبيكسر السطر بعده.  
+      - &lt;span&gt; عنصر inline يعني بيظهر جوه النص من غير ما يكسر السطر.  
+      مثال: لو عايز تجمع مجموعة عناصر كبيرة في بلوك واحد يبقى تستخدم div، إنما لو عايز تلون كلمة معينة في نص يبقى span أنسب.
+    </p>
+  </details>
+
+  <details>
+    <summary>57- امتى استخدم &lt;header&gt; بدل &lt;div&gt;؟</summary>
+    <p>
+      &lt;header&gt; عنصر semantic معمول مخصوص عشان يمثل رأس الصفحة أو القسم (زي العنوان الرئيسي + navigation).  
+      أما &lt;div&gt; فهو عنصر عام ملّهش معنى semantic.  
+      لما تستخدم &lt;header&gt; بتحسن الـ SEO وبتخلي الصفحة أسهل لمحركات البحث ومساعدة لذوي الاحتياجات الخاصة (screen readers).
+    </p>
+  </details>
+
+  <details>
+    <summary>58- ايه فايدة &lt;footer&gt;؟</summary>
+    <p>
+      &lt;footer&gt; بيستخدم لعرض معلومات ختامية زي حقوق الملكية، روابط سريعة، أو بيانات تواصل.  
+      بيقدر يظهر في آخر الصفحة أو في آخر section.  
+      استخدامه بيدي معنى أوضح للصفحة وبيخلي هيكلها منظم أكتر.
+    </p>
+  </details>
+
+  <details>
+    <summary>59- ايه الفرق بين &lt;section&gt; و &lt;article&gt;؟</summary>
+    <p>
+      - &lt;section&gt; بيستخدم عشان تقسيم المحتوى لأجزاء منطقية (زي جزء عن الخدمات، جزء عن الفريق).  
+      - &lt;article&gt; بيمثل محتوى مستقل ممكن يتنشر لوحده (زي مقالة أو بوست مدونة).  
+      يعني article self-contained بينما section عبارة عن grouping لمحتوى له نفس الهدف.
+    </p>
+  </details>
+
+  <details>
+    <summary>60- ليه &lt;nav&gt; مهم؟</summary>
+    <p>
+      &lt;nav&gt; بيتحط فيه روابط التنقل الرئيسية للموقع. وجوده بيخلي محركات البحث وأدوات الـ accessibility تعرف إن ده هو navigation الأساسي.  
+      من غيره المستخدمين ذوي الإعاقة البصرية ممكن يتلغبطوا في الروابط.
+    </p>
+  </details>
+
+  <details>
+    <summary>61- ايه الفرق بين inline CSS و internal CSS و external CSS؟</summary>
+    <p>
+      - **Inline CSS**: بيتكتب جوه العنصر نفسه باستخدام الـ style attribute. سريع بس بيخلي الكود ملخبط وصعب الصيانة.  
+      - **Internal CSS**: بيتكتب جوه &lt;style&gt; في &lt;head&gt; الصفحة. مفيد لصفحة واحدة بس.  
+      - **External CSS**: بيتكتب في ملف خارجي (.css) وبيترابط بالصفحة. أفضل أسلوب عشان يفصل التنسيق عن المحتوى ويسهل إعادة الاستخدام.
+    </p>
+  </details>
+
+  <details>
+    <summary>62- ازاي بحدد اتجاه النصوص في HTML؟</summary>
+    <p>
+      باستخدام الـ attribute اسمه dir.  
+      - dir=\"ltr\": بيخلي النص من الشمال لليمين (زي الإنجليزي).  
+      - dir=\"rtl\" : بيخلي النص من اليمين للشمال (زي العربي).  
+      كمان ممكن تضيفه في العنصر html كله عشان يطبق على الصفحة كلها.
+    </p>
+  </details>
+
+  <details>
+    <summary>63- ايه هي character encoding؟</summary>
+    <p>
+      الـ character encoding هي الطريقة اللي بتحدد إزاي الحروف والرموز تتحول لـ bits عشان الكمبيوتر يفهمها.  
+      UTF-8 هو الترميز الأكثر استخدامًا لأنه بيدعم معظم لغات العالم بما فيها العربي.  
+      عشان كده بنكتب في &lt;head&gt;: &lt;meta charset=\"UTF-8\"&gt;.
+    </p>
+  </details>
+
+  <details>
+    <summary>64- ايه الفرق بين absolute URL و relative URL؟</summary>
+    <p>
+      - **Absolute URL**: بيحتوي على العنوان الكامل للملف (بما في ذلك البروتوكول والدومين). مثال: https://example.com/images/pic.jpg.  
+      - **Relative URL**: بيعتمد على موقع الصفحة الحالية. مثال: images/pic.jpg.  
+      الـ absolute مفيد لو عايز تشير لملف خارجي أو دومين مختلف، والـ relative أفضل داخل نفس المشروع.
+    </p>
+  </details>
+
+  <details>
+    <summary>65- ازاي أكتب تعليق في HTML؟</summary>
+    <p>
+      التعليق بيتكتب كده:  
+      <br>&lt;!-- ده تعليق مش بيظهر في الصفحة --&gt;  
+      التعليقات بتساعد تشرح الكود لنفسك أو لغيرك وما بتتقرش من المتصفح.
+    </p>
+  </details>
+
+  <details>
+    <summary>66- ايه الفرق بين &lt;ol&gt; و &lt;ul&gt;؟</summary>
+    <p>
+      - &lt;ol&gt;: Ordered List يعني قايمة مرقمة (1، 2، 3...).  
+      - &lt;ul&gt;: Unordered List يعني قايمة نقطية (•).  
+      كل عنصر جواهم بيكون باستخدام &lt;li&gt;.
+    </p>
+  </details>
+
+  <details>
+    <summary>67- ممكن أعمل قايمة جوا قايمة؟</summary>
+    <p>
+      آه، تقدر تعمل Nested Lists. يعني تحط &lt;ul&gt; أو &lt;ol&gt; جوا &lt;li&gt; عشان تعمل قايمة متفرعة.  
+      ده مفيد في القوايم الكبيرة زي الـ menu.
+    </p>
+  </details>
+
+  <details>
+    <summary>68- ايه هو &lt;dl&gt;؟</summary>
+    <p>
+      &lt;dl&gt; هو Definition List. بيستخدم عشان تعمل قايمة بتشرح مصطلحات.  
+      - &lt;dt&gt;: المصطلح (term).  
+      - &lt;dd&gt;: تعريف المصطلح (description).  
+      مثال: قايمة تعريفية بالكلمات أو glossary.
+    </p>
+  </details>
+
+  <details>
+    <summary>69- ايه فايدة attribute id؟</summary>
+    <p>
+      id بيحدد عنصر معين بشكل فريد في الصفحة.  
+      - بيساعدك تعمل CSS أو JavaScript targeting.  
+      - كمان بيسمح بإنشاء روابط داخلية للصفحة (anchor links).  
+      مهم جدًا إنه يكون unique وما يتكرر.
+    </p>
+  </details>
+
+  <details>
+    <summary>70- الفرق بين id و class؟</summary>
+    <p>
+      - id: فريد (unique) لكل عنصر. ما ينفعش يتكرر.  
+      - class: ممكن يتشارك بين عناصر كتيرة.  
+      مثال: لو عندك زرار واحد مخصوص تستخدم id. لو عندك أزرار كتيرة بنفس التنسيق تستخدم class.
+    </p>
+  </details>
+
+  <details>
+    <summary>71- ايه هو &lt;iframe&gt;؟</summary>
+    <p>
+      &lt;iframe&gt; بيعرض صفحة ويب تانية جوا صفحتك.  
+      مثال: تقدر تعرض فيديو YouTube أو خريطة Google Maps.  
+      بس خلي بالك الإفراط في استخدامه ممكن يبطّئ الصفحة ويعمل مشاكل في الأمان (security).
+    </p>
+  </details>
+
+  <details>
+    <summary>72- ازاي أخلي صورة clickable كرابط؟</summary>
+    <p>
+      بتحط الصورة جوا &lt;a&gt; كده:  
+      <br>&lt;a href=\"page.html\"&gt;&lt;img src=\"pic.jpg\" alt=\"\"&gt;&lt;/a&gt;  
+      بكده المستخدم لما يضغط على الصورة يروح للرابط.
+    </p>
+  </details>
+
+  <details>
+    <summary>73- ايه فايدة &lt;meta viewport&gt;؟</summary>
+    <p>
+      &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"&gt;  
+      ده بيخلي الصفحة responsive على الموبايل. من غيره الصفحة هتظهر صغيرة ومش متناسبة.
+    </p>
+  </details>
+
+  <details>
+    <summary>74- ايه الفرق بين block-level و inline elements؟</summary>
+    <p>
+      - **Block-level**: بياخد عرض الصفحة بالكامل ويبدأ في سطر جديد (زي &lt;div&gt;، &lt;p&gt;، &lt;h1&gt;).  
+      - **Inline**: بياخد مساحة قد المحتوى بس وما يكسرش السطر (زي &lt;span&gt;، &lt;a&gt;، &lt;img&gt;).  
+      ده مهم عشان تفهم سلوك العناصر وتنسقها صح.
+    </p>
+  </details>
+
+  <details>
+    <summary>75- امتى أستخدم &lt;br&gt;؟</summary>
+    <p>
+      &lt;br&gt; بيعمل line break يعني يكسر السطر.  
+      بيتستخدم لما تكون عايز النص يتقسم لسطرين من غير ما تبدأ فقرة جديدة.  
+      بس الأفضل تستخدمه قليل، وللفقرات الطويلة الأفضل تستخدم &lt;p&gt;.
+    </p>
+  </details>
+    <details>
+    <summary>76- ايه الفرق بين &lt;em&gt; و &lt;strong&gt;؟</summary>
+    <p>
+      - &lt;em&gt; بيستخدم للتأكيد أو التشديد على كلمة معينة (emphasis)، غالبًا بيتعرض بخط مائل.  
+      - &lt;strong&gt; بيستخدم لتأكيد قوي (strong importance)، غالبًا بيتعرض بخط عريض.  
+      الفرق مش مجرد شكل، ده كمان دلالي (semantic) لمحركات البحث وأدوات القراءة.
+    </p>
+  </details>
+
+  <details>
+    <summary>77- ايه الفرق بين &lt;i&gt; و &lt;em&gt;؟</summary>
+    <p>
+      - &lt;i&gt; بيستخدم للخط المائل purely presentation (شكل).  
+      - &lt;em&gt; semantic بمعنى بيؤكد على النص في سياق الكلام.  
+      بالتالي يفضل تستخدم &lt;em&gt; بدل &lt;i&gt; إلا لو غرضك مجرد الشكل.
+    </p>
+  </details>
+
+  <details>
+    <summary>78- ايه الفرق بين &lt;b&gt; و &lt;strong&gt;؟</summary>
+    <p>
+      - &lt;b&gt; بيخلي النص عريض من غير معنى semantic.  
+      - &lt;strong&gt; بيدي معنى “مهم جدًا” بالإضافة للشكل.  
+      يعني &lt;strong&gt; أحسن في الـ SEO والـ accessibility.
+    </p>
+  </details>
+
+  <details>
+    <summary>79- ايه هو semantic HTML؟</summary>
+    <p>
+      Semantic HTML يعني استخدام عناصر ليها معنى بيوضح الغرض من المحتوى (زي &lt;header&gt;، &lt;footer&gt;، &lt;article&gt;).  
+      ده بيساعد محركات البحث والـ screen readers تفهم الصفحة صح، وبيخلي الكود أنظف وأسهل للصيانة.
+    </p>
+  </details>
+
+  <details>
+    <summary>80- ازاي أكتب جدول في HTML؟</summary>
+    <p>
+      الجدول بيتعمل باستخدام:  
+      - &lt;table&gt;: بداية الجدول.  
+      - &lt;tr&gt;: صف (table row).  
+      - &lt;td&gt;: خلية بيانات (table data).  
+      - &lt;th&gt;: خلية عنوان (table header).  
+      مثال:  
+      <br>&lt;table&gt;  
+      &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;  
+      &lt;tr&gt;&lt;td&gt;Omar&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;  
+      &lt;/table&gt;
+    </p>
+  </details>
+
+  <details>
+    <summary>81- ايه فايدة attribute colspan و rowspan في الجدول؟</summary>
+    <p>
+      - colspan: بيخلي الخلية تمتد على أكتر من عمود.  
+      - rowspan: بيخلي الخلية تمتد على أكتر من صف.  
+      ده مفيد في الجداول المعقدة زي جداول النتائج أو التقويم.
+    </p>
+  </details>
+
+  <details>
+    <summary>82- ايه هو &lt;thead&gt; و &lt;tbody&gt; و &lt;tfoot&gt;؟</summary>
+    <p>
+      - &lt;thead&gt;: بيتحط فيه صفوف العناوين.  
+      - &lt;tbody&gt;: الصفوف الرئيسية للبيانات.  
+      - &lt;tfoot&gt;: صفوف ملخصة (زي إجمالي).  
+      التقسيم ده مش بيغير الشكل بس بيخلي الكود أوضح ويدعم الـ accessibility.
+    </p>
+  </details>
+
+  <details>
+    <summary>83- ازاي أكتب فورمة بسيطة في HTML؟</summary>
+    <p>
+      الفورمة بتبدأ بـ &lt;form&gt;، جواها عناصر إدخال:  
+      - &lt;input type=\"text\"&gt;: حقل نص.  
+      - &lt;input type=\"password\"&gt;: كلمة سر.  
+      - &lt;input type=\"submit\"&gt;: زر إرسال.  
+      مثال:  
+      <br>&lt;form action=\"submit.php\" method=\"post\"&gt;  
+      &lt;input type=\"text\" name=\"username\"&gt;  
+      &lt;input type=\"submit\" value=\"Send\"&gt;  
+      &lt;/form&gt;
+    </p>
+  </details>
+
+  <details>
+    <summary>84- ايه الفرق بين method=\"get\" و method=\"post\" في الفورمة؟</summary>
+    <p>
+      - GET: بيبعت البيانات في الرابط (URL). مناسب للبحث، بس مش آمن للبيانات الحساسة.  
+      - POST: بيبعت البيانات في body الطلب، مش بتظهر في الرابط. مناسب للتسجيل والدفع.  
+      الاختيار بيعتمد على نوع البيانات.
+    </p>
+  </details>
+
+  <details>
+    <summary>85- ايه هو &lt;label&gt; في الفورمة؟</summary>
+    <p>
+      &lt;label&gt; بيربط النص بحقل الإدخال.  
+      لما تضغط على النص المرتبط، بيحدد input تلقائيًا.  
+      ده بيسهل على المستخدم ويحسن الـ accessibility.  
+      مثال: &lt;label for=\"email\"&gt;Email:&lt;/label&gt;&lt;input id=\"email\" type=\"text\"&gt;
+    </p>
+  </details>
+
+  <details>
+    <summary>86- ايه هو &lt;textarea&gt;؟</summary>
+    <p>
+      &lt;textarea&gt; عنصر لإدخال نصوص طويلة (multi-line).  
+      ممكن تحدد الصفوف والأعمدة باستخدام attributes rows و cols.  
+      مثال: &lt;textarea rows=\"4\" cols=\"50\"&gt;&lt;/textarea&gt;
+    </p>
+  </details>
+
+  <details>
+    <summary>87- ايه الفرق بين &lt;input type=\"radio\"&gt; و &lt;input type=\"checkbox\"&gt;؟</summary>
+    <p>
+      - Radio buttons: المستخدم يختار خيار واحد بس من مجموعة. لازم يكونوا بنفس الاسم (name).  
+      - Checkboxes: المستخدم يقدر يختار أكتر من خيار في نفس الوقت.  
+      مثال: اختيار الجنس Radio، اختيار الهوايات Checkbox.
+    </p>
+  </details>
+
+  <details>
+    <summary>88- ايه فايدة attribute name في الفورمة؟</summary>
+    <p>
+      name بيحدد اسم الحقل اللي هيتبعت مع البيانات للسيرفر.  
+      السيرفر بيستخدم الاسم ده يقرأ القيمة.  
+      من غير name، البيانات مش هتتبعت أصلاً.
+    </p>
+  </details>
+
+  <details>
+    <summary>89- ازاي أعمل قايمة منسدلة؟</summary>
+    <p>
+      باستخدام &lt;select&gt; مع &lt;option&gt;.  
+      مثال:  
+      <br>&lt;select name=\"country\"&gt;  
+      &lt;option value=\"eg\"&gt;Egypt&lt;/option&gt;  
+      &lt;option value=\"sa\"&gt;Saudi Arabia&lt;/option&gt;  
+      &lt;/select&gt;
+    </p>
+  </details>
+
+  <details>
+    <summary>90- ايه هو placeholder؟</summary>
+    <p>
+      placeholder attribute بيظهر نص داخل input بيختفي أول ما المستخدم يكتب.  
+      مثال: &lt;input type=\"text\" placeholder=\"Enter your name\"&gt;.  
+      مفيد كإرشاد سريع، بس مش بديل عن label.
+    </p>
+  </details>
+
+  <details>
+    <summary>91- ايه فايدة required attribute؟</summary>
+    <p>
+      required بيخلي الحقل لازم يتملي قبل ما الفورمة تتبعت.  
+      المتصفح بيراجع البيانات (client-side validation) ويمنع الإرسال لو الحقل فاضي.
+    </p>
+  </details>
+
+  <details>
+    <summary>92- ايه الفرق بين &lt;button&gt; و &lt;input type=\"submit\"&gt;؟</summary>
+    <p>
+      - &lt;input type=\"submit\"&gt;: زرار بسيط للإرسال. نص الزرار بيتحدد بالـ value.  
+      - &lt;button&gt;: عنصر أكتر مرونة، ممكن يحتوي على HTML داخلي (نصوص + صور).  
+      كمان &lt;button&gt; ليه نوعين: submit أو button عادي.
+    </p>
+  </details>
+
+  <details>
+    <summary>93- ايه هو &lt;fieldset&gt; و &lt;legend&gt;؟</summary>
+    <p>
+      - &lt;fieldset&gt; بيجمع مجموعة من عناصر الفورمة داخل إطار.  
+      - &lt;legend&gt; بيكتب عنوان للإطار ده.  
+      مثال: بيانات شخصية (fieldset) فيها الاسم، الإيميل، والتليفون.
+    </p>
+  </details>
+
+  <details>
+    <summary>94- ايه فايدة autocomplete attribute؟</summary>
+    <p>
+      autocomplete بيخلي المتصفح يقترح بيانات سابقة للمستخدم (زي الإيميل أو الاسم).  
+      ممكن يكون on أو off.  
+      مثال: &lt;input type=\"email\" autocomplete=\"on\"&gt;
+    </p>
+  </details>
+
+  <details>
+    <summary>95- ايه الفرق بين inline frame (iframe) و embed؟</summary>
+    <p>
+      - &lt;iframe&gt;: بيعرض صفحة ويب كاملة جوا صفحتك.  
+      - &lt;embed&gt;: بيستخدم لإضافة محتوى خارجي زي فيديو أو ملف PDF أو Flash.  
+      الاتنين بيضيفوا محتوى خارجي، بس iframe مخصص أكتر للصفحات، و embed للميديا.
+    </p>
+  </details>
+    <details>
+    <summary>96- ايه الفرق بين &lt;script&gt; في &lt;head&gt; و في &lt;body&gt;؟</summary>
+    <p>
+      - لما تحط &lt;script&gt; في &lt;head&gt;، المتصفح بيوقف تحميل الصفحة لحد ما يحمّل الكود، وده ممكن يبطّئ عرض المحتوى.  
+      - لما تحطه قبل &lt;/body&gt;، الصفحة كلها بتظهر الأول وبعدها يتنفذ السكربت.  
+      عشان كده يفضل دايمًا تحط JavaScript قبل &lt;/body&gt; أو تستخدم attribute زي defer أو async.
+    </p>
+  </details>
+
+  <details>
+    <summary>97- ايه الفرق بين defer و async في &lt;script&gt;؟</summary>
+    <p>
+      - **async**: بيحمّل السكربت في الخلفية ويتنفذ أول ما يخلص التحميل، حتى لو الصفحة لسه بتتحمّل.  
+      - **defer**: بيحمّل السكربت في الخلفية لكنه ما يتنفذش غير بعد ما الصفحة تخلص تحميل بالكامل.  
+      غالبًا defer أفضل للكود اللي بيعتمد على عناصر الصفحة.
+    </p>
+  </details>
+
+  <details>
+    <summary>98- ايه هو &lt;noscript&gt;؟</summary>
+    <p>
+      &lt;noscript&gt; بيُعرض للمستخدمين اللي متصفحهم مش بيدعم JavaScript أو اللي موقفينه.  
+      ممكن تكتب فيه رسالة أو روابط بديلة عشان الصفحة تفضل مفهومة حتى من غير JS.
+    </p>
+  </details>
+
+  <details>
+    <summary>99- ايه الفرق بين &lt;link&gt; و &lt;a&gt;؟</summary>
+    <p>
+      - &lt;link&gt;: بيتكتب في &lt;head&gt; لربط الصفحة بملفات خارجية زي CSS أو أي موارد تانية. مش عنصر مرئي.  
+      - &lt;a&gt;: بيربط المستخدم بصفحة أو ملف تاني، وده عنصر مرئي بيتضغط عليه.  
+      يعني link للموارد التقنية و a للتنقل بين الصفحات.
+    </p>
+  </details>
+
+  <details>
+    <summary>100- ايه هو &lt;base&gt;؟</summary>
+    <p>
+      &lt;base&gt; بيتكتب في &lt;head&gt; ويحدد عنوان أساسي (base URL) للروابط النسبية في الصفحة.  
+      مثال: لو كتبت &lt;base href=\"https://example.com/\"&gt;، أي رابط نسبي زي images/pic.jpg هيتحول لـ https://example.com/images/pic.jpg.
+    </p>
+  </details>
+
+  <details>
+    <summary>101- ازاي أضيف أيقونة للصفحة (favicon)؟</summary>
+    <p>
+      بتحط الكود في &lt;head&gt;:  
+      <br>&lt;link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\"&gt;  
+      الأيقونة دي بتظهر في التاب بتاع المتصفح والبوكماركس.
+    </p>
+  </details>
+
+  <details>
+    <summary>102- ايه فايدة attribute target في &lt;a&gt;؟</summary>
+    <p>
+      target بيحدد مكان فتح الرابط:  
+      - _self: في نفس التاب (ده الافتراضي).  
+      - _blank: في تاب جديد.  
+      - _parent و _top: حالات خاصة بالإطارات (frames).  
+      أكتر حاجة مستخدمة النهارده _blank عشان يفتح في نافذة جديدة.
+    </p>
+  </details>
+
+  <details>
+    <summary>103- ايه الفرق بين relative path و absolute path للصور؟</summary>
+    <p>
+      - relative path: بيعتمد على مكان الملف الحالي. مثال: images/pic.jpg.  
+      - absolute path: بيكتب المسار الكامل من أول الجذر (أو الـ URL). مثال: /assets/images/pic.jpg أو https://example.com/pic.jpg.  
+      relative مفيد للمشاريع الداخلية، absolute مفيد لو الصور جايه من سيرفر تاني.
+    </p>
+  </details>
+
+  <details>
+    <summary>104- ازاي أخلي عنصر يظهر أو يختفي بس باستخدام HTML؟</summary>
+    <p>
+      باستخدام attribute اسمه hidden.  
+      مثال: &lt;p hidden&gt;النص ده مش هيظهر&lt;/p&gt;.  
+      المتصفح بيتجاهله في العرض لكنه موجود في الكود.
+    </p>
+  </details>
+
+  <details>
+    <summary>105- ايه فايدة download attribute في &lt;a&gt;؟</summary>
+    <p>
+      download attribute بيخلي الرابط ينزل الملف بدل ما يفتحه.  
+      مثال: &lt;a href=\"file.pdf\" download&gt;Download File&lt;/a&gt;.  
+      كده المستخدم هيحمّل الملف مباشرة.
+    </p>
+  </details>
+
+  <details>
+    <summary>106- ايه الفرق بين SVG و IMG؟</summary>
+    <p>
+      - IMG: بيعرض صورة نقطية (bitmap) زي PNG أو JPG. الجودة بتتأثر بالتكبير.  
+      - SVG: رسمة متجهة (vector)، بتتحافظ على الجودة مهما كبرت.  
+      SVG مناسب للأيقونات والشعارات، IMG للصور العادية.
+    </p>
+  </details>
+
+  <details>
+    <summary>107- ايه هو &lt;figure&gt; و &lt;figcaption&gt;؟</summary>
+    <p>
+      - &lt;figure&gt;: بيستخدم لاحتواء صورة أو رسم أو أي محتوى مرئي.  
+      - &lt;figcaption&gt;: تعليق أو وصف للمحتوى داخل figure.  
+      مثال: صورة + شرحها النصي.
+    </p>
+  </details>
+
+  <details>
+    <summary>108- ازاي أضيف فيديو في HTML؟</summary>
+    <p>
+      باستخدام &lt;video&gt; element:  
+      <br>&lt;video controls&gt;  
+      &lt;source src=\"movie.mp4\" type=\"video/mp4\"&gt;  
+      المتصفح مش بيدعم الفيديو ده.  
+      &lt;/video&gt;  
+      ممكن تضيف attributes زي autoplay, loop, muted.
+    </p>
+  </details>
+
+  <details>
+    <summary>109- ازاي أضيف صوت في HTML؟</summary>
+    <p>
+      باستخدام &lt;audio&gt; element:  
+      <br>&lt;audio controls&gt;  
+      &lt;source src=\"sound.mp3\" type=\"audio/mpeg\"&gt;  
+      المتصفح مش بيدعم الصوت ده.  
+      &lt;/audio&gt;
+    </p>
+  </details>
+
+  <details>
+    <summary>110- ايه فايدة attribute controls في &lt;audio&gt; و &lt;video&gt;؟</summary>
+    <p>
+      controls attribute بيظهر أزرار التحكم (تشغيل، إيقاف، صوت) للمستخدم.  
+      من غيره، المستخدم مش هيقدر يتحكم في تشغيل الملف.
+    </p>
+  </details>
+
+  <details>
+    <summary>111- ايه الفرق بين HTML5 و الإصدارات القديمة؟</summary>
+    <p>
+      HTML5 جاب معاه عناصر semantic جديدة (&lt;header&gt;, &lt;footer&gt;, &lt;article&gt;).  
+      كمان أضاف دعم للفيديو والصوت بدون إضافات خارجية.  
+      دعم Local Storage, Canvas, Geolocation.  
+      يعني بقى أقوى وأسهل في تطوير التطبيقات الحديثة.
+    </p>
+  </details>
+
+  <details>
+    <summary>112- ايه هو &lt;canvas&gt;؟</summary>
+    <p>
+      &lt;canvas&gt; عنصر بيخليك ترسم جرافيكس باستخدام JavaScript.  
+      مفيد للألعاب، الرسومات التفاعلية، charts.  
+      هو مجرد مساحة فارغة، ولازم تستخدم JS لرسم أي حاجة عليه.
+    </p>
+  </details>
+
+  <details>
+    <summary>113- ازاي أعمل input يقبل ألوان؟</summary>
+    <p>
+      باستخدام &lt;input type=\"color\"&gt;.  
+      ده بيفتح أداة اختيار الألوان في المتصفح.  
+      القيمة اللي بترجع بتكون كـ hex code (#ff0000 مثلًا).
+    </p>
+  </details>
+
+  <details>
+    <summary>114- ازاي أخلي input يقبل تواريخ؟</summary>
+    <p>
+      باستخدام &lt;input type=\"date\"&gt;.  
+      بيفتح calendar picker في المتصفح عشان المستخدم يختار تاريخ.  
+      القيمة اللي بترجع بتكون بصيغة yyyy-mm-dd.
+    </p>
+  </details>
+
+  <details>
+    <summary>115- ايه الفرق بين HTML و CSS و JavaScript؟</summary>
+    <p>
+      - HTML: بيحدد هيكل الصفحة والعناصر (العناوين، النصوص، الصور، الفورمات).  
+      - CSS: مسؤول عن الشكل والتنسيق (ألوان، خطوط، مسافات، layout).  
+      - JavaScript: بيضيف التفاعل والديناميكية (الأزرار، الحركات، تحديث البيانات بدون refresh).  
+      التلاتة مع بعض هما الأساس لأي موقع ويب حديث.
+    </p>
+  </details>
+
+</body>
+
+</html>
